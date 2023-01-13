@@ -6,14 +6,18 @@
  * @flow strict-local
  */
 
-import React from 'react';
-import { View,Text } from 'react-native';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import RootStack from './Src/Navigation/RootStack';
 
 const App = () => {
+
   return (
-    <View>
-      <Text>Hellooo</Text>
-    </View>
+    <NavigationContainer>
+      <RootStack/>
+    </NavigationContainer>
+
+
   )
 }
 export default App;
